@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,300;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+  position: relative;
+  background-color: rgb(187, 199, 207);
+  width: 100%;
+  height: 60vh;
+  background: url(pizza.jpg);
+  background-size: 100vw;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(228, 150, 213);
+  display: flex;
+}
+header h1 {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: 2em;
+  width: 200px;
+}
+.menu {
+  position: absolute;
+  max-width: 40%;
+  min-width: auto;
+  display: flex;
+  top: 20px;
+  right: 50px;
+  list-style: none;
+}
+.menu li {
+  padding: 10px;
+  font-size: 1.5em;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.menu li:hover {
+  transform: scale(0.9) translateY(-10px);
+  color: blanchedalmond;
+}
+.midtext {
+  position: relative;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 15vh;
+  font-size: 1em;
+}
+.midtext p {
+  font-weight: 600;
+}
+.text {
+  padding: 5px;
+  border-radius: 5px;
+  border-color: none;
+  margin: 5px;
+  transition: 0.5s;
+}
+.text:hover {
+  transform: scale(0.9) translateZ(-3px);
+  border-color: rgb(124, 231, 16);
+  background-color: bisque;
+}
+.pizzatype {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.name {
+  position: relative;
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.name li {
+  background-color: darkgray;
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 5px 50px 5px 50px;
+  border-style: solid;
+  border-color: black;
+}
+
+.review {
+  position: relative;
+  font-size: 2em;
+  margin: 40px 0px 0px 0px;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(228, 150, 213);
+  padding: 5px 5px 5px 60px;
+}
+
+.reviewgrid {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 200px 500px 200px 500px;
+  box-sizing: border-box;
+  grid-gap: 10px;
+}
+.st1 {
+  margin: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex;
+  overflow: auto;
+}
+.st {
+  margin: 10px;
+  background-color: rgb(187, 199, 207);
+  border-radius: 300px / 200px;
+  display: flex;
+  justify-content: space-between;
+  text-align: centre;
+  padding: 40px;
+}
+.st1 img {
+  position: relative;
+  size: 2em;
+  left: 20px;
+  top: 30px;
+}
+.grab {
+  position: relative;
+  top: 60px;
+  left: 30px;
+  margin-bottom: 30px;
+  background-color: chartreuse;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 3px 10px 3px 10px;
+  font-size: 2em;
+  animation: simple 20s infinite alternate;
+}
+.grab:hover {
+  font-size: 1.7em;
+  background-color: rgb(231, 86, 217);
+  border-color: black;
+}
+
+@keyframes simple {
+  0% {
+    left: 30px;
+  }
+  50% {
+    left: 75vw;
+    background-color: rgb(10, 172, 15);
+  }
+  100% {
+    left: 30px;
+  }
+}
+
+.footer {
+  position: relative;
+  margin: 50px 30px 10px 30px;
+  background-color: rgb(187, 199, 207);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact {
+  font-size: 2em;
+  margin: 0px 100px 10px 10px;
+  padding: 0px 20px 10px 10px;
+}
+.about {
+  position: relative;
+  width: 30%;
+  margin: 0px 100px 10px 10px;
+  padding: 0px 100px 10px 10px;
+}
+.About1 {
+  font-size: 2em;
+}
+
+.connect {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  align-items: flex-end;
+  bottom: 10px;
+  width: 30%;
+  height: 120px;
+}
+.connect li:hover {
+  transform: scale(0.8, 0.8) translateX(10px) translateY(-10px);
+  color: rgb(175, 118, 43);
+  background-color: antiquewhite;
+}
+.connect li {
+  border-style: solid;
+  border-radius: 50px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.footr {
+  padding: 10px;
+}
