@@ -11,10 +11,30 @@
   position: relative;
   background-color: rgb(187, 199, 207);
   width: 100%;
-  height: 60vh;
+  height: 80vh;
   background: url(pizza.jpg);
   background-size: 100vw;
+  overflow: hidden;
+  object-fit: cover;
 }
+/* Preloader
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+}
+
+.preloader img {
+  width: 20rem;
+  height: 20rem;
+} */
 
 header {
   width: 100%;
@@ -29,6 +49,29 @@ header h1 {
   font-size: 2em;
   width: 200px;
 }
+
+#homepagefoot{
+  position: relative;
+  width:80%;
+  height:100px;
+  background-color: #ede9e9;
+  box-shadow: 3.5px 3.5px 3.5px 3.5px #e1d2d2;
+  margin:25px auto 25px auto;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  font-family:"Poppins", sans-serif ;
+  font-weight: 500; 
+  padding :25px;
+  text-align: center; 
+}
+
+.btn{
+  border-color: none;
+  border-radius: 20px;
+  text-decoration: none;
+  padding:2px 5px 2px 5px;
+  
+}
 .menu {
   position: absolute;
   max-width: 40%;
@@ -37,6 +80,8 @@ header h1 {
   top: 20px;
   right: 50px;
   list-style: none;
+  
+
 }
 .menu li {
   padding: 10px;
@@ -54,8 +99,9 @@ header h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  top: 15vh;
+  top: 25%;
   font-size: 1em;
+ 
 }
 .midtext p {
   font-weight: 600;
@@ -72,6 +118,8 @@ header h1 {
   border-color: rgb(124, 231, 16);
   background-color: bisque;
 }
+
+
 .pizzatype {
   position: relative;
   display: flex;
@@ -102,22 +150,23 @@ header h1 {
   height: 60px;
   background-color: rgb(228, 150, 213);
   padding: 5px 5px 5px 60px;
+  text-align: center;
 }
 
 .reviewgrid {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 74vh;
   margin: 0px;
   padding: 0px;
   display: grid;
-  grid-template-columns: 200px 500px 200px 500px;
+  grid-template-columns: 200px 430px 200px 430px;
   box-sizing: border-box;
   grid-gap: 10px;
+  background-color: rgb(231, 226, 226);
 }
 .st1 {
   margin: 10px;
-
   display: flex;
   justify-content: space-between;
   align-items: flex;
@@ -130,7 +179,7 @@ header h1 {
   display: flex;
   justify-content: space-between;
   text-align: centre;
-  padding: 40px;
+  padding: 50px;
 }
 .st1 img {
   position: relative;
@@ -149,11 +198,18 @@ header h1 {
   padding: 3px 10px 3px 10px;
   font-size: 2em;
   animation: simple 20s infinite alternate;
+  text-decoration:dashed;
 }
 .grab:hover {
   font-size: 1.7em;
   background-color: rgb(231, 86, 217);
   border-color: black;
+}
+
+.method :hover {
+
+ background-color: rgb(231, 86, 217);
+
 }
 
 @keyframes simple {
@@ -162,7 +218,8 @@ header h1 {
   }
   50% {
     left: 75vw;
-    background-color: rgb(10, 172, 15);
+    background-color: rgb(28, 244, 107);
+    
   }
   100% {
     left: 30px;
@@ -217,4 +274,92 @@ header h1 {
 
 .footr {
   padding: 10px;
+}
+
+.copyright {
+margin:20px 0px 0px 0px;
+padding:10px;
+background-color: rgb(231, 86, 217);
+text-align: center;
+width:100%;
+}
+
+
+
+@media only screen and (max-width:1058px){
+#item2, #item3, #item4{
+  display:none;
+}
+.showcase {
+  position: relative;
+  background-color: rgb(187, 199, 207);
+  width: 100%;
+  height: 80vh;
+  background: url(pizza.jpg);
+  background-size: 100vw;
+  overflow: hidden;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+#homepagefoot{
+  padding:5px;
+}
+.reviewgrid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns:375px 375px;
+  box-sizing: border-box;
+  grid-gap: 10px;
+  background-color: rgb(231, 226, 226);
+  overflow: scroll;
+}
+#review2 #review4{
+  display:none;
+  content:none; 
+}
+ .st1{
+  display:none;
+}
+#grabit{
+  display:none;
+}
+.connect ,.about{
+  display: none;
+}
+ /* #review3, #review4{
+  visibility: collapse;
+} */
+.review{
+  font-size:large;
+}
+
+#iframe1 #iframe2 #iframe3{
+  display:none;
+}
+.name{
+  display: none;
+}
+.st{
+  width:350px;
+  height:auto;
+}
+.pizzatype{
+  overflow: scroll;}
+
+.feet{
+    background-color: rgb(233, 233, 234); 
+}
+.pizzatype iframe{
+  width: auto;; 
+  height:200px;
+  margin:10px;
+}
+
+
 }
